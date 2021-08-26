@@ -1,7 +1,4 @@
-// Aula 09 - 26/08/2021
-// Checkpoint - Microondas
-// Grupo 7 - 
-
+// Checkpoint1 - Alexandre - Programação Imperativa
 
 /* 1 ͦ Checkpoint de Programação Imperativa!
 Olá, você foi contratado para executar este projeto. É importante que você analise, entenda o pedido do cliente e desenvolva conforme solicitado. Veja abaixo os requisitos do projeto:
@@ -20,47 +17,72 @@ Olá, você foi contratado para executar este projeto. É importante que você a
 - Se o tempo for 3x maior que o necessário para o prato, o microondas deve exibir a mensagem: “kabumm”;
 - No final de cada tarefa, o microondas deverá exibir a mensagem: "Prato pronto, bom apetite!!!". */
 
-console.log("||||||||||||||||||||||||||||||");
-console.log("||||||||| Microondas |||||||||");
-console.log("||||||||||||||||||||||||||||||");
-console.log("1 - Pipoca – 10 segundos (padrão)");
-console.log("2 - Macarrão – 8 segundos (padrão)");
-console.log("3 - Carne – 15 segundos (padrão)");
-console.log("4 - Feijão – 12 segundos (padrão)");
-console.log("5 - Brigadeiro – 8 segundos (padrão)");
-console.log("0 - Tempo-padrao");
-console.log("Tecle a opção desejada e o seu respectivo tempo de preparo. Tecle 0 para utilizar o tempo-padrão");
+var tmpPadrao;
 
+function microondas(prato, tempoUser) {
 
-var prato = "";
-var tmp = "";
-var tmpPadrao = 0;
-var result = "";
+    if (prato == 1) {
+        tmpPadrao = 10;
+        if (tempoUser < tmpPadrao)
+            console.log("Tempo insuficiente");
+        if (tempoUser >= tmpPadrao && tempoUser < 2 * tmpPadrao)
+            console.log("Prato pronto, bom apetite!!!");
+        if (tempoUser > 3 * tmpPadrao)
+            console.log("Kabumm");
+        if (tempoUser > 2 * tmpPadrao)
+            console.log("A comida queimou")
+    }
 
-function microondas(opcao) {
+    if (prato == 2) {
+        tmpPadrao = 8;
+        if (tempoUser < tmpPadrao)
+            console.log("Tempo insuficiente");
+        if (tempoUser >= tmpPadrao && tempoUser < 2 * tmpPadrao)
+            console.log("Prato pronto, bom apetite!!!");
+        if (tempoUser > 3 * tmpPadrao)
+            console.log("Kabumm");
+        if (tempoUser > 2 * tmpPadrao)
+            console.log("A comida queimou")
+    }
 
-if (option == 1) {
-      optUser = "PIPOCA"      
-} else if (option == 2) {
-      optUser = "MACARRÃO"      
-} else if (option == 3) {
-      optUser = "CARNE"      
-} else if (option == 4) {
-      optUser = "FEIJÃO"      
-} else if (option == 5) {
-      optUser = "BRIGADEIRO"
-} else {
-      return console.log("Opção inválida, escolha outra")
+    if (prato == 3) {
+        tmpPadrao = 15;
+        if (tempoUser < tmpPadrao)
+            console.log("Tempo insuficiente");
+        if (tempoUser >= tmpPadrao && tempoUser < 2 * tmpPadrao)
+            console.log("Prato pronto, bom apetite!!!");
+        if (tempoUser > 3 * tmpPadrao)
+            console.log("Kabumm");
+        if (tempoUser > 2 * tmpPadrao)
+            console.log("A comida queimou")
+    }
+
+    if (prato == 4) {
+        tmpPadrao = 12;
+        if (tempoUser < tmpPadrao)
+            console.log("Tempo insuficiente");
+        if (tempoUser >= tmpPadrao && tempoUser < 2 * tmpPadrao)
+            console.log("Prato pronto, bom apetite!!!");
+        if (tempoUser > 3 * tmpPadrao)
+            console.log("Kabumm");
+        if (tempoUser > 2 * tmpPadrao)
+            console.log("A comida queimou")
+    }
+
+    if (prato == 5) {
+        tmpPadrao = 8;
+        if (tempoUser < tmpPadrao)
+            console.log("Tempo insuficiente");
+        if (tempoUser >= tmpPadrao && tempoUser < 2 * tmpPadrao)
+            console.log("Prato pronto, bom apetite!!!");
+        if (tempoUser > 3 * tmpPadrao)
+            console.log("Kabumm");
+        if (tempoUser > 2 * tmpPadrao)
+            console.log("A comida queimou")
+    }
+
+    if (prato != 1 || prato != 2 || prato != 3 || prato != 4 || prato != 5)
+        console.log("Prato inexistente");
 }
-return result
-}
+microondas(1, 21);
 
-microondas(1)
-
-switch (optUser) {
-      case "PIPOCA":
-      console.log("Você escolheu PIPOCA")
-      console.log("Tempo de praparo = 10 segundos")
-      console.log("Seu prato já está pronto!")
-      break;
-}
