@@ -1,4 +1,10 @@
-// Checkpoint1 - Alexandre - Programação Imperativa
+// Checkpoint1 - Grupo 07 - Programação Imperativa
+
+// Alexandre
+// Kantuta
+// Gladston
+// João Rocha
+// Jessika
 
 /* 1 ͦ Checkpoint de Programação Imperativa!
 Olá, você foi contratado para executar este projeto. É importante que você analise, entenda o pedido do cliente e desenvolva conforme solicitado. Veja abaixo os requisitos do projeto:
