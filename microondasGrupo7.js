@@ -85,4 +85,3 @@ function microondas(prato, tempoUser) {
         console.log("Prato inexistente");
 }
 microondas(1, 21);
-
